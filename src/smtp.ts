@@ -32,7 +32,7 @@ export async function sendEmail(): Promise<void> {
   const info = await transporter.sendMail({
     from: `"Sherif" <${email}>`,
     to: email,
-    subject: "Test",
+    subject: "It's Me",
     text,
   });
 

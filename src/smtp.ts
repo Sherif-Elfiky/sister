@@ -30,7 +30,7 @@ export async function sendEmail(): Promise<void> {
   const text: string = (await scrapeLikes()) || "there is some error";
 
   const info = await transporter.sendMail({
-    from: `"Sherif" <${email}>`,
+    from: `"Sherif Elfiky" <${email}>`,
     to: email,
     subject: "It's Me",
     text,

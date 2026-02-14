@@ -1,9 +1,9 @@
-name: Hourly run
+name: Every 3 hours
 
 on:
   schedule:
-    # Every hour at minute 0 (e.g. 1:00, 2:00, 3:00)
-    - cron: "0 * * * *"
+    # Every 3 hours at minute 0 (0:00, 3:00, 6:00, 9:00, 12:00, 15:00, 18:00, 21:00 UTC)
+    - cron: "0 */3 * * *"
   workflow_dispatch: # Lets you run it manually from the Actions tab
 
 jobs:
